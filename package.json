@@ -5,14 +5,14 @@
   "description": "Meteora Invent - Monorepo for studio scripts and scaffold templates",
   "author": "Dann Wee <dann@raccoons.dev>",
   "license": "ISC",
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.14.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=9.0.0"
+    "node": ">=18",
+    "pnpm": ">=10"
   },
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node init && turbo build",
+    "dev": "node init && turbo dev",
     "lint": "turbo lint",
     "format": "turbo format",
     "format:check": "turbo format:check",
